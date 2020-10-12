@@ -1,0 +1,64 @@
+body{
+	margin: 0;
+}
+
+div {
+	width: 300px;
+	height: 300px;
+	background: red; /* Para navegadores que não aguentam o firefox */
+	margin-top: 20px;
+}
+
+/*gradiente de cima para baixo */
+.cimaparabaixo{
+	background: -webkit-linear-gradient(red, yellow, lightblue); /* Safari */
+	background: -moz-linear-gradient(red, yellow, lightblue); /* Firefox */
+	background: -ms-linear-gradient(red, yellow, lightblue); /* Navegadores Microsoft */
+	background: -o-linear-gradient(red, yellow, lightblue); /* Opera */
+	background: linear-gradient(red, yellow, lightblue); /* Sintaxe padrão */
+}
+
+/*gradiente da esquerda para direita*/
+.esqparadir{
+	background: -webkit-linear-gradient(left, red, yellow, green); /* Safari */
+	background: -moz-linear-gradient(right, red, yellow, green); /* Firefox */
+	background: -ms-linear-gradient(right, red, yellow, green); /* Navegadores Microsoft */
+	background: -o-linear-gradient(right, red, yellow, green); /* Opera */
+	background: linear-gradient(to right, red, yellow, green); /* Sintaxe padrão */
+}
+
+/*gradiente diagonal*/
+.diagonal{
+	background: -webkit-linear-gradient(left top, red, yellow); /* Safari */
+	background: -moz-linear-gradient(bottom right, red, yellow); /* Firefox */
+	background: -ms-linear-gradient(bottom right, red, yellow); /* Navegadores Microsoft */
+	background: -o-linear-gradient(bottom right, red, yellow); /* Opera */
+	background: linear-gradient(to bottom right, red, yellow); /* Sintaxe padrão */
+}
+
+/*gradiente com ângulos*/
+.angulos{
+	background: -webkit-linear-gradient(-90deg, red, yellow, blue); /* Safari */
+	background: -moz-linear-gradient(-90deg, red, yellow, blue); /* Firefox */
+	background: -ms-linear-gradient(-90deg, red, yellow, blue); /* Navegadores Microsoft */
+	background: -o-linear-gradient(-90deg, red, yellow, blue); /* Opera */
+	background: linear-gradient(-90deg, red, yellow, blue); /* Sintaxe padrão */
+}
+
+/*gradiente usando vários níveis de cor*/
+.variosniveis{
+	background: -webkit-linear-gradient(red, yellow, green); /* Safari */
+	background: -moz-linear-gradient(red, yellow, green); /* Firefox */
+	background: -ms-linear-gradient(red, yellow, green); /* Navegadores Microsoft */
+	background: -o-linear-gradient(red, yellow, green); /* Opera */
+	background: linear-gradient(red, yellow, green); /* Sintaxe padrão */
+}
+
+/*gradiente radial*/
+.gradiente{
+	background: -webkit-radial-gradient(red, yellow, green); /* Safari */
+	background: -moz-radial-gradient(red, yellow, green); /* Firefox */
+	background: -ms-radial-gradient(red, yellow, green); /* Navegadores Microsoft */
+	background: -o-radial-gradient(red, yellow, green); /* Opera */
+	background: radial-gradient(red, yellow, green); /* Sintaxe padrão */
+}

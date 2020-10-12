@@ -1,0 +1,23 @@
+body{
+	margin: 0;
+	height: 1000px;
+}
+
+div{
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+	/*float: left; informa o deslocamento das divs*/
+}
+
+.box1{
+	background-color: yellow;
+	position: absolute; /* fica bem início*/ 
+	z-index: 1; /* determina a posição em relação ao eixo z*/
+}
+
+.box2{
+	background-color: red;
+	position: fixed; /* não sai do lugar mesmo tendo rolagem do scroll*/
+	margin: 10px;
+}

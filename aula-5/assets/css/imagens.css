@@ -1,0 +1,39 @@
+/*.rounded{
+	border-radius: 25px;
+	background-color: #73AD21;
+	padding: 20px;
+	width: 200px;
+	height: 150px;
+} div com cantos arredondados*/
+
+body{
+	margin: 0;
+}
+
+.bg{
+	width: 100%;
+	min-height: 1080px;
+	background-image: url(../img/608.png), url(../img/607.jpg);
+	background-position: left top, right bottom;
+	background-repeat: no-repeat, repeat; 
+	background-attachment: scroll;
+	background-size: initial, cover; /*tamamnho da imagem*/
+}
+
+/*
+  possibilidades do background-size
+  
+- auto (Valor padrão da imagem)
+- cover (Dimensiona a imagem para que a área de fundo seja completamente coberta)
+- contain (Dimensiona a imagem para o maior tamanho, de modo que sua largura e altura possam caber dentro da área de conteúdo) 
+
+  possibilidades do background-attachment
+
+- scroll (O fundo rola junto com o elemento)
+- fixed (O plano de fundo é corrigido em relação à viewport)
+- local (O fundo rola junto com o conteúdo do elemento)
+- initial (Define essa propriedade como seu valor padrão)
+- inherit (Herdar esta propriedade do seu elemento pai)
+*/
+
+

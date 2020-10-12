@@ -1,0 +1,44 @@
+body{
+	margin: 0;
+}
+
+div{
+	width: 100px;
+	height: 100px;
+	background-color: lightblue;
+	position: relative;
+	-webkit-animation-name: exemplo; /*Safari*/
+	-webkit-animation-duration: 4s; /*Safari*/
+	animation-name: exemplo;
+	animation-duration: 4s;
+	
+	animation-iteration-count: 4; /* infinite - animação infinita */
+	-webkit-animation-iteration-count: 4; /* Safari */
+	-moz-animation-iteration-count: 4; /* Mozilla */
+	-o-animation-iteration-count: 4; /* Opera */
+	-ms-animation-iteration-count: 4; /* Microsoft */
+	
+	animation-direction: alternate; /* alterna a direcao da animação, pode ser randomico */
+	-webkit-animation-direction: alternate;
+	-moz-animation-direction: alternate;
+	-o-animation-direction: alternate;
+	-ms-animation-direction: alternate;
+}
+
+/* Safari */
+@-webkit-keyframes exemplo{
+	0%   { background-color: lightblue; left: 0; top: 0; }
+	25%  { background-color: yellow; left: 200px; top: 0; }
+	50%  { background-color: blue; left: 200px; top: 200px; }
+	75%  { background-color: purple; left: 0; top: 200px; }
+	100% { background-color: lightblue; left: 0; top: 0; }
+}	
+
+/* Sintaxe padrão */
+@keyframes exemplo{
+	0%   { background-color: lightblue; left: 0; top: 0; }
+	25%  { background-color: yellow; left: 200px; top: 0; }
+	50%  { background-color: blue; left: 200px; top: 200px; }
+	75%  { background-color: purple; left: 0; top: 200px; }
+	100% { background-color: lightblue; left: 0; top: 0; }
+}	

@@ -1,0 +1,48 @@
+body{
+	background-color: powderblue;
+}
+
+h1{
+	color: blue;
+	font-family: Courier, Verdana;
+	font-size: 300%;
+}
+
+p{
+	color: red;
+	font-family: "Comic Sans MS", sans-serif;
+	font-size: 30px;
+	border: 1px solid #000;
+	/*border-style: dotted dashed solid double;
+	border-color: #000;*/
+	border-top: 5px dotted yellow;
+	border-bottom: 10px dashed #fff;
+	border-left: 15px double #7caae6;
+	border-right: 5px solid rgb(125, 200, 20);
+	
+	/* espaço entre o texto e a borda em sentido horário, 
+	iniciando no topo*/
+	padding: 10px 20px 30px 40px; 
+
+	/*margin: 10px 20px 30px 40px;  
+	 define uma margem, espaço fora da borda*/
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 30px;
+	margin-left: 40px;
+}	
+
+/*dotted - Define uma borda pontilhada
+dashed - Define uma borda tracejada
+solid - Define uma borda sólida
+double - Define uma borda dupla
+none - Define nenhuma borda*/
+
+#roxo{
+	color: purple;
+}
+
+.verde{
+	color: green;
+}
+
