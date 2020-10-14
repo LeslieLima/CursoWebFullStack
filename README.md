@@ -1,2 +1,2 @@
 # CursoWebFullStack
- Curso *Web Full Stack* **Code Universe**
+ Curso *Web Full Stack* Code Universe
