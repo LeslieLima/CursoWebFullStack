@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head lang="pt-br">
+		<meta charset="utf-8">
+		<title>Comparação JS</title>
+	</head>
+	<body>
+
+		<h2> Valores iguais</h2>
+		<p id="iguais"></p>
+
+		<h2>Valores e tipos iguais</h2>
+		<p id="iguaisMesmo"></p>
+
+		<script type="text/javascript">
+			var x = 10;
+			var y = '10';
+
+			document.getElementById("iguais").innerHTML = (x == y);
+			document.getElementById('iguaisMesmo').innerHTML = (x === y);
+		</script>
+
+
+		<h2> Valores Diferentes</h2>
+		<p id="diferentes"></p>
+
+		<h2>Valores e tipos diferentes</h2>
+		<p id="diferentesMesmo"></p>
+
+		<script type="text/javascript">
+			var x = 10;
+			var y = '10';
+
+			document.getElementById("diferentes").innerHTML = (x != y);
+			document.getElementById('diferentesMesmo').innerHTML = (x !== y);
+		</script>
+
+		
+		<h2>Maior</h2>
+		<p id="maior"></p>
+
+		<h2>Maior ou Igual</h2>
+		<p id="maiorIgual"></p>
+
+		<script type="text/javascript">
+			var x = 10;
+			var y = 10;
+
+			document.getElementById("maior").innerHTML = (x > y);
+			document.getElementById('maiorIgual').innerHTML = (x >= y);
+		</script>
+
+
+		<h2>Menor</h2>
+		<p id="menor"></p>
+
+		<h2>Valores e tipos diferentes</h2>
+		<p id="menorIgual"></p>
+
+
+		<script type="text/javascript">
+			var x = 10;
+			var y = 10;
+
+			document.getElementById("menor").innerHTML = (x < y);
+			document.getElementById('menorIgual').innerHTML = (x <= y);
+		</script>
+
+
+		<!-- Operadores Lógicos -->
+
+		<script type="text/javascript">
+			var x = 10;
+			var y = 5;
+			var z = 0;
+			console.log("And")
+			console.log(x > y && x < z);
+			console.log("Or")
+			console.log(x > y || x > z);
+		</script>
+
+	</body>
+</html>
