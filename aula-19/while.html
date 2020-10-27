@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head lang="pt-br">
+		<meta charset="utf-8">
+		<title>While JS</title>
+	</head>
+	<body>
+
+		<p id="teste"></p>
+
+		<script type="text/javascript">
+			
+			var text = "";
+			var i = 0;
+
+			while (i < 10){
+				text += "<br> o número é " + i;
+				i++;
+			}
+
+			document.getElementById("teste").innerHTML = text;
+
+			console.log(text);
+
+		</script>
+
+		
+	</body>
+</html>

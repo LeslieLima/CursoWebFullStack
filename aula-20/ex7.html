@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<title>Exercício 7</title>
+	</head>
+	
+	<body>
+
+		<input id="frutas" type="text" value="Maçã">
+
+		<button onclick="checarFruta()">Checar Fruta</button>
+
+		<p id="resultado"></p>
+
+		<br><br>
+		<a href="index.html">Voltar</a>
+
+		<script>
+
+			function checarFruta() {
+
+			  var texto;
+			  var fruta = document.getElementById("frutas").value;
+
+			  switch(fruta) {
+
+			    case "Banana":
+			      texto = "Temos Banana!";
+			      break;
+
+			    case "Laranja":
+			      texto = "Temos Laranja!.";
+			      break;
+
+			     case "Maçã":
+			      texto = "Temos Maçã!.";
+			      break;
+
+			    default:
+			      texto = "Não temos " + fruta;
+			  }
+
+			  document.getElementById("resultado").innerHTML = texto;
+			}
+
+		</script>
+
+	</body>
+</html>

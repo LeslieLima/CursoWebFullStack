@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<title>Exercício 6</title>
+	</head>
+
+	<body>
+
+	<p id ="res">O resultado será mostrado aqui.</p>
+
+	<br><br>
+	<a href="index.html">Voltar</a>
+
+ 
+<!-- 	<script>
+		function mult(a, b) {
+			document.getElementById("res").innerHTML=a * b;
+		}
+		mult(5, 5);
+	</script>  -->
+
+
+
+	<script>
+		function mult() {
+			a = Number.parseInt(window.prompt('Digite o primeiro número'))
+			b = Number.parseInt(window.prompt('Digite o segundo número'))
+		
+			document.getElementById("res").innerHTML =(`A multiplicação de ${a} x ${b} é: `+ (a * b));
+		}
+		mult();
+	</script>
+
+	</body>
+</html>

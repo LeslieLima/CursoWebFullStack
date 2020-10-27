@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head lang="pt-br">
+		<meta charset="utf-8">
+		<title>Validação com JS</title>
+
+		<script type="text/javascript">
+			
+		function validacaoForm() {
+
+			var nome 		= document.forms['form']['nome'].value;
+			var sobrenome 	= document.forms['form']['sobrenome'].value;
+			var idade 		= document.forms['form']['idade'].value;
+
+			if (nome == ''){
+				alert('Preencha seu nome');
+				return false;
+			}
+
+			if (sobrenome == ''){
+				alert('Preencha seu sobrenome');
+				return false;
+			}
+
+			if (idade == '') {
+				alert('Preencha sua idade');
+				return false;
+			}
+
+			if (isNaN(idade)){
+				alert('Idade inválida');
+				return false;
+			}
+
+			if (idade < 18){
+				alert('Você precisa ter 18 anos ou mais');
+				return false;
+			}
+
+		}
+
+		</script>
+	</head>
+	<body>
+
+		<form name="form" action="pagina.php" target="_blank" method="GET" onsubmit="return validacaoForm()">
+			
+			Nome: <input type="text" name="nome"><br>
+			Sobrenome: <input type="text" name="sobrenome"><br>
+			Idade: <input type="text" name="idade"><br>
+
+			<input type="submit" value="Enviar">
+
+		</form>
+			
+	</body>
+</html>

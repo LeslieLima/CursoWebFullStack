@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<title>Exercício 5</title>
+	</head>
+
+	<body>
+
+	<p id ="res">O resultado será mostrado aqui.</p>
+
+	<br><br>
+	<a href="index.html">Voltar</a>
+
+<!-- 
+	<script>
+		function soma(a, b) {
+			document.getElementById("res").innerHTML=a + b;
+		}
+		soma(2, 5);
+	</script> 
+-->
+
+	<script>
+		function soma() {
+			a = Number.parseInt(window.prompt('Digite o primeiro número'))
+			b = Number.parseInt(window.prompt('Digite o segundo número'))
+		
+			document.getElementById("res").innerHTML =(`A soma de ${a} + ${b} é: `+ (a + b));
+		}
+		soma();
+	</script>
+
+	</body>
+</html>

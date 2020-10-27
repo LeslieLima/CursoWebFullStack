@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head lang="pt-br">
+		<meta charset="utf-8">
+		<title>Tipos JS</title>
+	</head>
+	<body>
+
+		<script type="text/javascript">
+			
+			var x = 10; //x é do tipo number - dado simpels
+			console.log(typeof x);
+
+			var x = 10.2 //x é do tipo number - dado simples 
+			console.log(typeof x);
+
+			var x = "teste"; // x é do tipo string - dado simplies
+			console.log(typeof x); 
+
+			var x = true; // x é do tipo boolean - dado simples
+			console.log(typeof x);
+
+			var x = ['Mercedes', 'Volvo', 'BMW']
+			console.log(typeof x);  // x é um objeto/array - dado complexo
+			console.log(x[0]) //primeiro valor do array na posição 0
+
+			var x = {
+				nome: "João",
+				sobrenome: "da Silva",
+				idade: 50
+			}; // x é um objeto - dado complexo
+			console.log(typeof x); 
+			console.log(x); // mostra todos os elementos
+			console.log(x.idade); //mostra somente o elemento idade dentro do x
+
+			var y; // x é indefinido - dado simples
+			console.log(typeof y);
+
+			var x = ""; // x está vazio do tipo string - dado simples
+			console.log(typeof x);
+
+			var x = null; // x tem valor nulo, considerado objeto - dado complexo
+			console.log(typeof x);
+
+			var x = function myFunc() {} // x é uma function - dado complexo
+			console.log(typeof x);
+
+		</script>
+		
+
+	</body>
+</html>
