@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head lang="pt-br">
+		<meta charset="utf-8">
+		<title>Caroussel</title>
+
+		<link rel="stylesheet" type="text/css" href="assets/libs/bootstrap/css/bootstrap.min.css">
+	</head>
+	<body>
+
+
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel"> <!-- div principal-->
+		  <div class="carousel-inner"> <!-- os ítens que vão dentro do caroussel-->
+		    
+		    <div class="carousel-item active"> <!-- slide que vai começar-->
+		      <img class="d-block w-50" src="assets/img/1.jpg" alt="Primeiro Slide"> <!-- imagem com display block e width de 100% -->
+		    </div>
+		    <div class="carousel-item"> <!-- demais ítens do caroussel-->
+		      <img class="d-block w-50" src="assets/img/2.jpg" alt="Segundo Slide">
+		    </div>
+		    <div class="carousel-item"> <!-- demais ítens do caroussel-->
+		      <img class="d-block w-50" src="assets/img/3.jpg" alt="Terceiro Slide">
+		    </div>
+		  </div>
+
+		  <!-- controles do carousel, que são links que vão mandar para o próximo slide-->
+		  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Anterior</span>
+		  </a>
+		  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Próximo</span>
+		  </a>
+		</div>
+		
+
+
+		<script type="text/javascript" src="assets/libs/jquery-3.5.1.min.js"></script>
+		<script type="text/javascript" src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
+
+	</body>
+</html>

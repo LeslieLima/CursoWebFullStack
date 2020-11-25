@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<title>Exercício 7</title>
+	</head>
+	
+	<body> 
+
+		<span>Passe o mouse para mudar a cor</span>
+
+		<script type="text/javascript" src="assets/libs/jquery-3.5.1.min.js"></script>
+		
+		<script>
+		$(document).ready(function(){
+		    $("span").mouseenter(function(){
+		       $(this).css('background-color', 'pink')
+		    });
+		});
+		</script>
+
+	</body>
+
+</html>
