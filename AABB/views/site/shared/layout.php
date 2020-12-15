@@ -26,67 +26,60 @@
   
   <body class="text-center">
 
-    <header>
-      
-      <nav class="navbar navbar-expand-md navbar-primary fixed-top" id="navmenu">
-
-        <div class="container" id="divmenu">
-
-          <a class="navbar-brand" href="#">
-            <img src="<?php echo $url; ?>/assets/img/aabblages.jpg" class="img-fluid img-thumbnail">
-          </a>
-          
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ml-auto m">
-            
-              <li class="nav-item active ml-auto">
-                <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-              </li>
-            
-              <li class="nav-item ml-auto">
-                <a class="nav-link" href="#">SOCIAL</a>
-              </li>
-            
-              <li class="nav-item ml-auto">
-                <a class="nav-link" href="#">ESPORTES</a>
-              </li>
-            
-              <li class="nav-item ml-auto">
-                <a class="nav-link" href="#">CONTATO</a>
-              </li>
-
-            </ul>
-          </div>
-
-        </div>
-
-      </nav>
    
-    </header>
-	  
+    <div class="d-flex h-100 w-100 mx-auto flex-column">
 
-
-    <main role="main">
+      <header>
+        <?php require ROOT."/views/site/shared/menu.php" ?>
+      </header>
+     
+      <main role="main">
         <?php require $file; ?> <!-- o $file requerido é o site/home/index.php - este é o main -->
-    </main>
+      </main>
 
-
-
-    <footer class="container">
-            
-      <h5>SEDE LAGES</h5>
+      <footer>
+        <div class="container">
+          <div class="row">
+  
+              <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-5 mb-md-0 mb-lg-0 mb-xl-0">
+                <h5>Menu</h5>
+                <a href="page2.php">Home</a>
+                <a href="page2.php">Social</a>
+                <a href="page2.php">Esporte</a>
+                <a href="page2.php">Contato</a>
+              </div>
               
-      <p>Av. Papa João XXIII, 2268<br>
-      Área Industrial, Lages - SC<br>
-      CEP 88514-720</p>
+              <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-5 mb-md-0 mb-lg-0 mb-xl-0">
+                <h5>Sede Lages</h5>
+                <p>Av. Papa João XXIII, 2268</p>
+                <p>Área Industrial, Lages - SC</p>
+                <p>CEP 88514-720</p>
+              </div>
+  
+              <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                  <h5>Redes Sociais</h5>
+                  <div class="row">
+                    <div class="col-6">
+                      <i class="fa fa-instagram float-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-6">
+                      <i class="fa fa-facebook float-left" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-6">
+                      <i class="fa fa-twitter float-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-6">
+                      <i class="fa fa-google-plus float-left" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+            
+            </div> <!-- /row-->
+        </div> <!-- /container-->
 
-      <h5>Fone: (49) 3226-0112</h5>
+      </footer>
 
-    </footer>
+    </div>
 
 	      
 

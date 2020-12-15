@@ -16,8 +16,8 @@ body {
 
 /* Carousel base class */
 .carousel {
-  margin-bottom: 40rem;
-  margin-top: 25px;
+  margin-bottom: 4rem;
+  margin-top: 20px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -39,7 +39,7 @@ body {
 }
 
 
-/* MARKETING CONTENT
+/* MARKETING CONTENT - ABAIXO DO CAROUSEL
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
@@ -56,20 +56,6 @@ body {
 }
 
 
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -.05rem;
-}
-
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -80,16 +66,6 @@ body {
     margin-bottom: 1.25rem;
     font-size: 1.25rem;
     line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
   }
 }
 
@@ -106,10 +82,52 @@ body {
   position: fixed;
   top:0px;
   height: 70px;
-  
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Arial Narrow Bold', Helvetica, sans-serif;
 }
 
-.nav-link{
-  color: #2b468d;
+section.contato{
+  background-color: #2b468d;
+  color: rgb(193, 180, 180);
+  padding: 30px;
+}
+
+section.contato p{
+  font-size: 25px;
+  display: inline;
+}
+
+section.contato h3{
+  text-align: center;
+}
+
+section.contato i{
+  font-size: 50px;
+  margin-right: 10px;
+}
+
+section.contato .fa-telegram{
+  font-size: 45px;
+}
+
+footer{
+  padding: 30px 30px 90px 30px;
+  background-color: #f3d802;
+}
+
+footer a{
+  display: grid;
+  color: #333;
+}
+
+footer p{
+  margin: 0;
+}
+
+footer a:hover{
+  color: #333;
+}
+
+footer i.fa{
+  font-size: 35px;
+  margin: 10px;
 }
